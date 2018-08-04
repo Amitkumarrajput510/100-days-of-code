@@ -1,0 +1,5 @@
+#problem for integer division or float division
+a = int(input())
+b = int(input())
+print(a//b)
+print(a/b)
