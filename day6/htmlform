@@ -1,0 +1,32 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML FORM</title>
+</head>
+<body>
+<form>
+	<h3>USER NAME:
+	<input type="text" name="username" value="" size="30" placeholder="User Name"/></h3><br/>
+	<h3>PASSWORD:
+	<input type="PASSWORD" name="password" value="" size="30" placeholder="Password"/><br/></h3>
+	<h3>GENDER:
+	<input type="radio" name="gender" value="male" checked=""/>Male
+	<input type="radio" name="gender" value="female" checked=""/>Female</h3><br/>
+	<h3>HOBBIES:
+	<input type="checkbox" name="hobby[]" value="sport" checked=""/>Sport
+	<input type="checkbox" name="hobby[]" value="music" checked=""/>Music<br/></h3>
+	<h3>CITY:
+	<select name="city">
+		<option value="agra"> Agra</option>
+		<option value="delhi"> Delhi</option>
+	</select><br/></h3>
+	<h3>ADDRESS:
+	<textarea name="address" rows="5" cols="50"></textarea></h3><br/>
+	<input type="submit" name="Submit" value="submit"/>
+	<input type="reset" name="Reset" value="reset"/>
+	
+</form>
+
+</body>
+</html>
