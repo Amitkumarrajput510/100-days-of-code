@@ -1,0 +1,83 @@
+
+<html>
+<body>
+<form action="learning.php" method="POST">
+<label>value 1</label>
+<input type="text" name="val1" type="Text"><br>
+<label>value 2</label>
+<input type="text" name="val2" type="Text"><br>
+
+<input type="Submit" name="S1" value="Sum"><br/>
+<input type="Submit" name="S2" value="Substraction">
+<input type="Submit" name="S3" value="Multipcation">
+<input type="Submit" name="S4" value="Division">
+</form>
+
+</html>
+
+<?php
+include 'calc class.php';
+$r= new calculator;
+
+
+	if(isset($_POST["S1"]))
+	{
+	$n1=$_POST["val1"];
+	$n2=$_POST["val2"];
+	$r->add($n1,$n2);
+     
+
+    }
+    if(isset($_POST["S2"]))
+    {
+   $n1=$_POST["val1"];
+	$n2=$_POST["val2"];
+	$r->subtract($n1,$n2);
+	
+    }
+    if(isset($_POST["S3"]))
+    {
+   $n1=$_POST["val1"];
+	$n2=$_POST["val2"];
+	$r->multiply($n1,$n2);
+	
+}
+  if(isset($_POST["S4"]))
+    {
+   $n1=$_POST["val1"];
+	$n2=$_POST["val2"];
+	$r->divide($n1,$n2);
+	
+}
+?>
+<?php
+
+class calculator
+{
+public function add($a,$b)
+{
+$r=$a+$b;
+echo $r;
+}
+
+public function subtract($a,$b)
+{
+$r=$a-$b;
+echo $r;
+}
+
+public function multiply($a,$b)
+{
+$r=$a*$b;
+echo $r;
+}
+
+public function divide($a,$b)
+{
+$r=$a/$b;
+echo $r;
+}
+
+}
+
+?>
