@@ -1,0 +1,9 @@
+function sayhi(){
+    console.log('hello everyone....');
+}
+
+sayhi();
+var expr = function(){
+    console.log('bye bye everyone.....');
+}
+expr();
