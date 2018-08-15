@@ -1,0 +1,10 @@
+var counter = function(arr){
+    return 'this array has'+ arr.length + ' elements');
+} ;
+
+module.exports = counter;
+
+
+
+var counter = require('./count');
+console.log(counter(['Ammu','Satyam','Mishra']));
